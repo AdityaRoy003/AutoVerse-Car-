@@ -6,6 +6,7 @@ import { Navbar } from './components/common/Navbar';
 import { Footer } from './components/common/Footer';
 import { QuickLoginModal } from './components/common/QuickLoginModal';
 import { ErrorBoundary } from './components/common/ErrorBoundary';
+import { ScrollToTop } from './components/common/ScrollToTop';
 
 // Pages
 import { HomePage } from './pages/HomePage';
@@ -116,6 +117,7 @@ export function App() {
       <LanguageProvider>
         <AuthProvider>
           <Router>
+            <ScrollToTop />
             <AppContent />
           </Router>
         </AuthProvider>

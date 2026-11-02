@@ -73,6 +73,7 @@ export const CarDetailPage: React.FC = () => {
 
   // 1. Initial Load of Car and Cities
   useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     async function init() {
       if (!slug) return;
       try {

@@ -36,6 +36,7 @@ export const UsedCarDetailPage: React.FC = () => {
   const [submitting, setSubmitting] = useState(false);
 
   useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     async function loadDetails() {
       if (!stockId) return;
       try {
